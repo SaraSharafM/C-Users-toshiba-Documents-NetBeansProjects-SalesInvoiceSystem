@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package control;
 
 
@@ -230,7 +226,7 @@ for (String  headLines: headLine){
  String Name= headerItem[2];
  InvoiceHeads invoice=new InvoiceHeads(Num,Date,Name);
  invHeads.add(invoice);}
-    System.out.println("Done!");
+    //System.out.println("Done!");
                       ////invHeads==InvoicesArray
     result=fc.showOpenDialog(frame);
     if(result==JFileChooser.APPROVE_OPTION){
@@ -238,7 +234,7 @@ for (String  headLines: headLine){
        Path linePath = Paths.get(linesFile.getAbsolutePath());
        List<String> Lines = Files.readAllLines(linePath);   
 
-    System.out.println("Readed WOOW!!!");
+    //System.out.println("Readed WOOW!!!");
 
 for (String  Line: Lines){
  String invoiceItem[] = Line.split(",");
@@ -277,7 +273,7 @@ frame.getLeftTable().fireTableDataChanged();
   
  
  }
- catch (IOException ex){ex.printStackTrace();}
+ catch (IOException ex){JOptionPane.showMessageDialog(frame, "File Error", "Error!", JOptionPane.ERROR_MESSAGE);}
 
 
 
