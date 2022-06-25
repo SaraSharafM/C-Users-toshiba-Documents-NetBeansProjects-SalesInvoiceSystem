@@ -48,10 +48,10 @@ public class ItemDialog extends JDialog{
         
         add(itemLabel);
         add(item);
-        add(count);
         add(itemPriceLabel);
-        add(countLabel);
         add(itemPrice);
+        add(countLabel);
+        add(count);
         add(okBtn);
         add(cancelBtn);
         

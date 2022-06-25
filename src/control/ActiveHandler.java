@@ -176,8 +176,7 @@ JFileChooser fc=new JFileChooser();
      
  }}
        } catch (IOException ex) {
-            Logger.getLogger(ActiveHandler.class.getName()).log(Level.SEVERE, null, ex);
-        }
+JOptionPane.showMessageDialog(frame, "Wrong File Format!", "Warning!", JOptionPane.ERROR_MESSAGE);        }
 
        }
 
@@ -273,7 +272,7 @@ frame.getLeftTable().fireTableDataChanged();
   
  
  }
- catch (IOException ex){JOptionPane.showMessageDialog(frame, "File Error", "Error!", JOptionPane.ERROR_MESSAGE);}
+ catch (IOException ex){JOptionPane.showMessageDialog(frame, "File Error!!", "Error!", JOptionPane.ERROR_MESSAGE);}
 
 
 
@@ -291,18 +290,19 @@ frame.getLeftTable().fireTableDataChanged();
         String[] dateConfirm = date.split("-");
         int day=Integer.parseInt(dateConfirm[0]) ;
         int month=Integer.parseInt(dateConfirm[1]) ;
-        int year=Integer.parseInt(dateConfirm[2]) ;
-        
-        if(dateConfirm.length< 3 || day >31 ||month>12 ||year<1900){
+        int year=Integer.parseInt(dateConfirm[2]) ;      
+        InvoiceHeads  invoice= new InvoiceHeads(num,date,customerName);
+     if(dateConfirm.length< 3 || day >31 ||month>12 ||year<1900){
             JOptionPane.showMessageDialog(frame, "Wrong date", "Error!", JOptionPane.ERROR_MESSAGE);}
 
-        InvoiceHeads  invoice= new InvoiceHeads(num,date,customerName);
+     else{           
         frame.getInvoices().add(invoice);
         frame.getLeftTable().fireTableDataChanged();
         createNewDialog.setVisible(false);
                 createNewDialog.dispose();
                 createNewDialog=null;
-    }
+     
+     }}
 catch(Exception ex){
     JOptionPane.showMessageDialog(frame, "Wrong date", "Error!", JOptionPane.ERROR_MESSAGE);}
     }

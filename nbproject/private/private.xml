@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/view/CreateNewDialog.java</file>
             <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/control/ActiveHandler.java</file>
+            <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/view/ItemDialog.java</file>
             <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/model/RightTable.java</file>
             <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/model/LeftTable.java</file>
             <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/model/InvoiceHeads.java</file>
+            <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/view/Frame.java</file>
             <file>file:/C:/Users/toshiba/Documents/NetBeansProjects/SalesInvoiceSystem/src/model/InvoiceLines.java</file>
         </group>
     </open-files>
